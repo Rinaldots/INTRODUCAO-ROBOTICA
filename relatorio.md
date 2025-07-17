@@ -23,8 +23,9 @@ Durante a aula, realizamos um experimento prático para entender a cinemática d
    - Plotamos os pontos medidos e calculados em um gráfico 3D.
    - Representamos o espaço de trabalho como uma pirâmide de base triangular (tetraedro).
 
-
    - Abaixo estão as imagens das coletas dos pontos do robô, organizadas em uma tabela:
+
+### Coleta dos dados de posição do Tetraedro
 
 | Base 1 | Base 2 | Base 3 | Topo |
 |:------:|:------:|:------:|:----:|
@@ -32,6 +33,11 @@ Durante a aula, realizamos um experimento prático para entender a cinemática d
 | *Figura 1: Atuador posicionado no ponto Base 1.* | *Figura 2: Atuador posicionado no ponto Base 2.* | *Figura 3: Atuador posicionado no ponto Base 3.* | *Figura 4: Atuador posicionado no ponto Topo.* |
 
 ## Resultados e Discussão
+
+Além disso, segue abaixo o gráfico gerado pelo código, mostrando o espaço de trabalho calculado:
+
+![Plot do Resultado](imgs/Plot_Resultado.png)
+*Figura 5: Espaço de trabalho do robô plotado a partir dos dados coletados e calculados.*
 
 - Observamos que os pontos calculados e medidos apresentam diferenças significativas.
 - As principais fontes de erro incluem:
