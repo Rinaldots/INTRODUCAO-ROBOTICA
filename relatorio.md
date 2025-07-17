@@ -23,19 +23,13 @@ Durante a aula, realizamos um experimento prático para entender a cinemática d
    - Plotamos os pontos medidos e calculados em um gráfico 3D.
    - Representamos o espaço de trabalho como uma pirâmide de base triangular (tetraedro).
 
-   - Abaixo estão as imagens das coletas dos pontos do robô, cada uma com sua legenda:
 
-![Coleta Ponto Base 1](imgs/base_1.jpg)
-*Figura 1: Atuador posicionado no ponto Base 1.*
+   - Abaixo estão as imagens das coletas dos pontos do robô, organizadas em uma tabela:
 
-![Coleta Ponto Base 2](imgs/base_2.jpg)
-*Figura 2: Atuador posicionado no ponto Base 2.*
-
-![Coleta Ponto Base 3](imgs/base_3.jpg)
-*Figura 3: Atuador posicionado no ponto Base 3.*
-
-![Coleta Ponto Topo](imgs/topo.jpg)
-*Figura 4: Atuador posicionado no ponto Topo.*
+| Base 1 | Base 2 | Base 3 | Topo |
+|:------:|:------:|:------:|:----:|
+| ![Coleta Ponto Base 1](imgs/base_1.jpg) | ![Coleta Ponto Base 2](imgs/base_2.jpg) | ![Coleta Ponto Base 3](imgs/base_3.jpg) | ![Coleta Ponto Topo](imgs/topo.jpg) |
+| *Figura 1: Atuador posicionado no ponto Base 1.* | *Figura 2: Atuador posicionado no ponto Base 2.* | *Figura 3: Atuador posicionado no ponto Base 3.* | *Figura 4: Atuador posicionado no ponto Topo.* |
 
 ## Resultados e Discussão
 
