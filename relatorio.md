@@ -1,4 +1,17 @@
-# Relatório: Cinemática Direta e Espaço de Trabalho de Braço Robótico
+
+# DCA3507 - INTRODUÇÃO À ROBÓTICA - T01 (2025.1)
+
+## Relatório: Cinemática Direta e Espaço de Trabalho de Braço Robótico
+
+**Professor:** PABLO JAVIER ALSINA
+
+**Alunos:**
+
+- CESAR HENRIQUE TITTOTO MELO
+- EDUARDO LIRA DA SILVA FILHO
+- HENRIQUE ANTÔNIO GUANAIS CORNEAU
+- RUTILENO GABRIEL CAMILO DA SILVA
+- RINALDO TAVARES DA SILVA FILHO
 
 ## Introdução
 
