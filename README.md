@@ -34,19 +34,12 @@ pip install -r requirements.txt
    ```
 
    Isso irá mostrar o gráfico 3D e imprimir a tabela de validação dos pontos.
-3. Para gerar o relatório em PDF:
 
-   ```bash
-   python tests.py
-   ```
-
-   (Certifique-se de ter o Pandoc instalado ou use o download automático no script)
 
 ### Estrutura dos arquivos
 
 - `robotica.py`: Script principal de cálculos e visualização
 - `relatorio.md`: Relatório em Markdown
-- `tests.py`: Script para converter o relatório em PDF
 - `imgs/`: Imagens dos pontos coletados e do resultado
 
 ### Créditos
