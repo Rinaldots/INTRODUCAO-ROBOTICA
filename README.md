@@ -42,10 +42,16 @@ pip install -r requirements.txt
 - `relatorio.md`: Relatório em Markdown
 - `imgs/`: Imagens dos pontos coletados e do resultado
 
+
 ### Créditos
 
-- Professor: Pablo Javier Alsina
-- Alunos: Cesar Henrique Tittoto Melo, Eduardo Lira da Silva Filho, Henrique Antônio Guanais Corneau, Rutileno Gabriel Camilo da Silva, Rinaldo Tavares da Silva Filho
+- **Professor:** Pablo Javier Alsina
+- **Alunos:**
+  - Cesar Henrique Tittoto Melo
+  - Eduardo Lira da Silva Filho
+  - Henrique Antônio Guanais Corneau
+  - Rutileno Gabriel Camilo da Silva
+  - Rinaldo Tavares da Silva Filho
 
 ---
 
