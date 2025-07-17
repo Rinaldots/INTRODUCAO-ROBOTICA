@@ -46,20 +46,13 @@ b3 = servo_3_values[0] - a3 * angles[0]
 def servo_angle(servo_value, a, b):
     return (servo_value - b) / a
 
-# Função para converter ângulo (graus) para PWM
-def angle_to_pwm(angle_deg, a, b):
-    # Recebe o ângulo em graus e retorna o PWM correspondente
-    return int(a * angle_deg + b)
-
 def calculate_angles(servo_values):
     if len(servo_values) != 4:
         raise ValueError("servo_values deve conter exatamente 4 valores")
-    # Converte PWM para ângulo em graus
     angle_0_deg = servo_angle(servo_values[0], a0, b0)
     angle_1_deg = servo_angle(servo_values[1], a1, b1)
     angle_2_deg = servo_angle(servo_values[2], a2, b2)
     angle_3_deg = servo_angle(servo_values[3], a3, b3)
-    # Converte graus para radianos para uso nas funções trigonométricas
     angle_0_rad = np.radians(angle_0_deg)
     angle_1_rad = np.radians(angle_1_deg)
     angle_2_rad = np.radians(angle_2_deg)
@@ -92,30 +85,10 @@ def calculate_transformation_matrix(pwm1, pwm2, pwm3, pwm4):
     return transformation_matrix
 
 # Pontos de teste (valores PWM dos servos)
-ponto1 = np.array([
-    angle_to_pwm(10, a0, b0),  # PWM 0: junta 0 em 10 graus
-    angle_to_pwm(20, a1, b1),  # PWM 1: junta 1 em 20 graus
-    angle_to_pwm(30, a2, b2),  # PWM 2: junta 2 em 30 graus
-    angle_to_pwm(40, a3, b3)   # PWM 3: junta 3 em 40 graus
-])
-ponto2 = np.array([
-    angle_to_pwm(50, a0, b0),
-    angle_to_pwm(60, a1, b1),
-    angle_to_pwm(70, a2, b2),
-    angle_to_pwm(80, a3, b3)
-])
-ponto3 = np.array([
-    angle_to_pwm(90, a0, b0),
-    angle_to_pwm(100, a1, b1),
-    angle_to_pwm(110, a2, b2),
-    angle_to_pwm(120, a3, b3)
-])
-ponto4 = np.array([
-    angle_to_pwm(130, a0, b0),
-    angle_to_pwm(140, a1, b1),
-    angle_to_pwm(150, a2, b2),
-    angle_to_pwm(160, a3, b3)
-])
+ponto1 = np.array([1460, 1430, 1550, 795])
+ponto2 = np.array([1310, 1420, 1930, 1395])
+ponto3 = np.array([1690, 1410, 1930, 1235])
+ponto4 = np.array([1485, 1065, 1330, 795])
 
 pose1 = calculate_transformation_matrix(*ponto1)
 pose2 = calculate_transformation_matrix(*ponto2)
@@ -167,8 +140,6 @@ faces = [
 poly3d = [[vertices[idx] for idx in face] for face in faces]
 ax.add_collection3d(art3d.Poly3DCollection(poly3d, facecolors='lime', linewidths=1, edgecolors='k', alpha=0.5))
 ax.scatter(vertices[:, 0], vertices[:, 1], vertices[:, 2], color='blue', s=60)
-for i, v in enumerate(vertices):
-    ax.text(v[0], v[1], v[2], nomes[i], color='black', fontsize=10)
 ax.set_xlabel('X (m)')
 ax.set_ylabel('Y (m)')
 ax.set_zlabel('Z (m)')
