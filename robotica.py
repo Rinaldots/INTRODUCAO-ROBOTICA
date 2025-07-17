@@ -140,10 +140,16 @@ faces = [
 poly3d = [[vertices[idx] for idx in face] for face in faces]
 ax.add_collection3d(art3d.Poly3DCollection(poly3d, facecolors='lime', linewidths=1, edgecolors='k', alpha=0.5))
 ax.scatter(vertices[:, 0], vertices[:, 1], vertices[:, 2], color='blue', s=60)
+# Adiciona os nomes dos pontos como labels
+nomes = ['Base 1', 'Base 2', 'Base 3', 'Topo']
+for i, nome in enumerate(nomes):
+    ax.text(vertices[i, 0], vertices[i, 1], vertices[i, 2], nome, color='black', fontsize=11, fontweight='bold')
 ax.set_xlabel('X (m)')
 ax.set_ylabel('Y (m)')
 ax.set_zlabel('Z (m)')
 ax.set_title('Pirâmide de Base Triangular (Tetraedro) - Pontos do Robô')
+# Inverte o eixo Z
+ax.set_zlim(ax.get_zlim()[::-1])
 plt.tight_layout()
 plt.show()
 
