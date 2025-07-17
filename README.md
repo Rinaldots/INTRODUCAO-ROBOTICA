@@ -35,13 +35,26 @@ pip install -r requirements.txt
 
    Isso irá mostrar o gráfico 3D e imprimir a tabela de validação dos pontos.
 
-
 ### Estrutura dos arquivos
 
 - `robotica.py`: Script principal de cálculos e visualização
-- `relatorio.md`: Relatório em Markdown
+- `relatorio.pdf`: Relatório em PDF
 - `imgs/`: Imagens dos pontos coletados e do resultado
+- `README.md`: Documentação do projeto
 
+### Imagens da coleta e dos resultados
+
+#### Coleta dos pontos do workspace
+
+| Base 1 | Base 2 | Base 3 | Topo |
+|:------:|:------:|:------:|:----:|
+| ![Coleta Ponto Base 1](imgs/base_1.jpg) | ![Coleta Ponto Base 2](imgs/base_2.jpg) | ![Coleta Ponto Base 3](imgs/base_3.jpg) | ![Coleta Ponto Topo](imgs/topo.jpg) |
+| *Figura 1: Atuador posicionado no ponto Base 1.* | *Figura 2: Atuador posicionado no ponto Base 2.* | *Figura 3: Atuador posicionado no ponto Base 3.* | *Figura 4: Atuador posicionado no ponto Topo.* |
+
+#### Resultado do espaço de trabalho
+
+![Plot do Resultado](imgs/Plot_Resultado.png)
+*Figura 5: Espaço de trabalho do robô plotado a partir dos dados coletados e calculados.*
 
 ### Créditos
 
